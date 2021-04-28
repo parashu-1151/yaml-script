@@ -1,0 +1,14 @@
+---
+ - name: simple launch of ec2 instance
+   hosts: localhost
+   connection: local
+   gather_facts: false
+   tasks:
+   - name: launch of ec2 instance
+     ec2:
+      aws_access_key:
+      aws_secret_key:
+      instance_type: t2.micro
+      image: ami-
+      reginon: us-east-1 
+
