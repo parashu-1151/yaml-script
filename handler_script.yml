@@ -1,0 +1,25 @@
+---
+ - name: write handler script
+   hosts: localhost
+   tasks:
+   - name: creating testuser
+     user:
+      name: testuser1
+      state: present
+     notify: user_msg
+
+   - name: install httpd
+     yum:
+      name: httpd
+      state: latest
+     notify: service_msg
+
+   handlers:
+   - name: service_msg
+     debug:
+      msg: "service httpd install sucessfully"
+     
+   - name: user_msg
+     debug:
+      msg: "test user created successfully"
+     

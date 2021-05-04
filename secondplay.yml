@@ -1,0 +1,30 @@
+---
+ - hosts: all
+   tasks:
+   - copy: src=/home/ansadmin/test.tst dest=/tmp/
+   - command: touch /tmp/new.txt
+ - hosts: webservers
+   tasks:
+   - copy: src=/home/ansadmin/users.yml dest=/tmp/
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

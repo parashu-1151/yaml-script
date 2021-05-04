@@ -1,0 +1,6 @@
+---
+ - name: reading command line variables
+   hosts: localhost
+   tasks:
+   - debug:
+      msg: "the values of value1={{var1}} and value2={{var2}}"

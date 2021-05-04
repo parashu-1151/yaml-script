@@ -1,0 +1,5 @@
+---
+ - hosts: localhost
+   vars_prompt:
+    name: var1
+    prompt: enter a value?

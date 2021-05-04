@@ -1,0 +1,6 @@
+---
+ - name: using register module
+   hosts: all
+   tasks:
+   - command: touch /tmp/reg_modul.txt
+     delegate_to: localhost

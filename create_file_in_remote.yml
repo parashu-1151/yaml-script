@@ -1,0 +1,8 @@
+---
+ - hosts: all
+   vars:
+    my_content: "this is store in file using variable"
+   tasks:
+   - copy:
+      dest: /tmp/var_file.txt
+      content: "{{my_content}}"

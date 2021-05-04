@@ -1,0 +1,44 @@
+---
+  -hosts: all
+   become:True
+   gather_facts: True
+   become_user: root
+   become_method: sudo
+   tasks: 
+     - name: creating user user1
+       user:
+          name: user1
+          password: $1$bTZtU9.6$wU.vFqnzejuJLlCQbBw.y0
+          group: sudo,docker
+          state: present
+          shellscript: /bin/bash
+     - name: creating user user2
+       user:
+          name: user2
+          password: $1$bTZtU9.6$wU.vFqnzejuJLlCQbBw.y0
+          group: sudo,docker
+          state: present
+          shellscript: /bin/bash
+     - name: creating user user3
+       user:
+          name: user3
+          password: $1$bTZtU9.6$wU.vFqnzejuJLlCQbBw.y0
+          group: sudo,docker
+          state: present
+          shellscript: /bin/bash
+     - name: creating user user4
+       user:
+          name: user4
+          password: $1$bTZtU9.6$wU.vFqnzejuJLlCQbBw.y0
+          group: sudo,docker
+          state: present
+          shellscript: /bin/bash
+
+    
+
+     
+
+     
+
+
+

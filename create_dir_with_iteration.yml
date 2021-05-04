@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   tasks:
+   - command: mkdir /tmp/"{{ item }}"
+     with_items:
+     - mydir4
+     - mydir5
+     - mydir6

@@ -1,0 +1,9 @@
+---
+ - hosts: localhost
+   tasks:
+   - name: creating mydir1,mydir2,mydir3
+     command: mkdir /tmp/mydir1
+   - name: mydir2
+     command: mkdir /tmp/mydir2
+   - name: mydir3
+     command: mkdir /tmp/mydir3

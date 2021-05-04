@@ -1,0 +1,8 @@
+---
+ - name: this will work based on condition
+   hosts: localhost
+   tasks:
+   - copy:
+      dest: /tmp/when_file.txt
+      content: this file work based on condition
+     when: true

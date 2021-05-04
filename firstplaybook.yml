@@ -1,0 +1,15 @@
+- hosts: all
+  gather_facts: True
+  become: True
+  tasks:
+  - name: creating vim editor
+    yum:
+    - name: vim
+      state: latest
+
+
+
+
+
+
+
